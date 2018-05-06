@@ -33,7 +33,7 @@ ALLOWED_HOSTS = []
 INSTALLED_APPS = [
 
     'pinapp',
-    'bootstrap3',
+    'bootstrapsd3',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
