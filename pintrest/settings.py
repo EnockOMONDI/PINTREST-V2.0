@@ -31,6 +31,7 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    'pinapp.apps.PinappConfig',
     'pinapp',
     'django.contrib.admin',
     'django.contrib.auth',
