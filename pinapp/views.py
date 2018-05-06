@@ -1,6 +1,6 @@
 from django.shortcuts import render
 from django.http  import HttpResponse
-from .models import Image
+#from .models import Image
 
 #views
 '''
@@ -11,7 +11,3 @@ def welcome(request):
 #pintresthomepageview
 def welcome(request):
     return render(request, 'pintrest.html')
-
-def welcome(request):
-    pinapp = Image.get_images()
-    return render(request, 'pintrest.html', {"pinapp": pinapp})
