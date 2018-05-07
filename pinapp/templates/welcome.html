@@ -3,7 +3,8 @@
 <div class="row">
     <div class="col s6 m6">
       <div class="card">
-        <div class="card-image">
+    
+
         </div>
         <div class="card-content">
           <p>     welcome to pintrest simply search images a by category you want ie foods, tatoos, cars, etc</p>
@@ -17,10 +18,9 @@
     {# displaying Profiles Images #}
 {% for image_item in profiles%}
     <div class="col-xs-4 col-sm-4 col-md-4 mt-5">
-      <div class="card" style="width: 14rem;">
+      <div class="card" style="width: 15rem;">
       <img class="card-img-top" src="{{image_item.image.url}}" class="img-responsive" alt="{{image_item.image_name}}">
         <div class="card-body">
-
         <a href="{% url 'image' image_item.id %}" class="waves-effect waves-light btn-small">view</a>
         </div>
       </div>
