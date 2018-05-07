@@ -1,11 +1,18 @@
 {% extends "all-pinapps/base.html" %}  {% block content %}
+<h1 class="text-center">WE'VE GOT IT ALL</h1> <br>
+<nav class="navbar navbar-light bg-light">
+  <span class="navbar-text">
+    search for food shoes cars suits
+  </span>
+</nav>
+
 <div class="container">
 
   <div class="row">
     {# displaying Profiles Images #}
 {% for image_item in profiles%}
     <div class="col-xs-4 col-sm-4 col-md-4 mt-5">
-      <div class="card" style="width: 18rem;">
+      <div class="card" style="width: 22rem;">
       <img class="card-img-top" src="{{image_item.image.url}}" class="img-responsive" alt="{{image_item.image_name}}">
         <div class="card-body">
           <a href="{% url 'image' image_item.id %}" class="card-link float-right">view more &rarr;</a>
