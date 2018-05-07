@@ -1,26 +1,25 @@
-{% load bootstrap3 %}
-<!DOCTYPE html>
-<html>
-<head>
-  <meta charset="utf-8">
+{% extends "all-pinapps/base.html" %} {% block content %}
+<div class="container">
 
-  {% if title %}
-  <title>PINTREST {{title}}</title>
-  {% else %}
-    <title> PINTREST </title>
-  {% endif %}
+  <div class="row">
+    {# displaying Pinapp Images #}
+{% for image_item in pinapp%}
+    <div class="col-xs-4 col-sm-4 col-md-4 mt-5">
+      <div class="card" style="width: 18rem;">
+      <img class="card-img-top" src="{{image_item.image.url}}" class="img-responsive" alt="{{image_item.image_name}}">
+        <div class="card-body">
+          <a href="{% url 'image' image_item.id %}" class="card-link float-right">see more &rarr;</a>
+        </div>
+      </div>
 
-  {% block styles %}
-    {% bootstrap_css %}
-  {% endblock %}
+    </div>
+    {% empty %}
+    <div class="row">
+      <h2 class="text-center">No Images</h2>
+    </div>
+    {% endfor%}
+  </div>
 
-</head>
-<body>
-    {% block content %} <h1 class='text-center'>PINTREST</h1> {%endblock%}
+</div>
 
-    {% block scripts %}
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-     {% bootstrap_javascript %}
-    {% endblock %}
-</body>
-</html>
+{% endblock %}
