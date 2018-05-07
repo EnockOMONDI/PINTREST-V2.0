@@ -8,10 +8,11 @@ from .models import Image, Category
 def welcome(request):
     return HttpResponse('Pintrest')
     '''
-
+'''
 #pintresthomepageview
 def welcome(request):
     return render(request, 'pintrest.html')
+    '''
 
 def welcome(request):
     profiles = Image.get_images()
@@ -24,11 +25,11 @@ def search_results(request):
         searched_categories = Image.search_category(search_term)
         message = f"{search_term}"
 
-        return render(request, 'all-profiles/search.html', {"message": message, "categories": searched_categories})
+        return render(request, 'all-pinapps/search.html', {"message": message, "categories": searched_categories})
 
     else:
-        message = "You haven't searched for any term"
-        return render(request, 'all-profiles/search.html', {"message": message})
+        message = "kindly search for and item"
+        return render(request, 'all-pinapps/search.html', {"message": message})
 
 
 def image(request, image_id):
@@ -36,4 +37,4 @@ def image(request, image_id):
         image = Image.objects.get(id=image_id)
     except DoesNotExist:
         raise Http404()
-    return render(request, "all-profiles/image.html", {"image": image})
+    return render(request, "all-pinapps/image.html", {"image": image})
