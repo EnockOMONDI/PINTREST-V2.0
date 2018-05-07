@@ -1,4 +1,5 @@
 # PINTREST V2 BY ENOCK OMONDI
+![PINTREST](screenshot.png)
 
 ## Description
 This is a full python django project called PINTREST this is like a personal gallery application that you display your photos for others to see.
