@@ -1,6 +1,6 @@
 {% load bootstrap4 %}
 {% load static %}
-<nav class="navbar navbar-dark bg-dark justify-content-between">
+<nav class="navbar navbar-dark" style="background-color:#000000;">
   <a class="navbar-brand" href="{% url 'welcome' %}">
     <img src="{% static 'images/Untitled.png' %}" width="30" height="30" class="d-inline-block align-top" alt="icon">
 
@@ -8,7 +8,7 @@
   <form class="form-inline" role="search" action="{% url 'search_results' %}">
     <div class="input-group">
       <input class="form-control mr-sm-2" type="text" placeholder="Search category" name="category" aria-label="Search">
-      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+      <button class="btn btn-outline-secondary my-2 my-sm-0" type="submit">Search</button>
     </div>
   </form>
 </nav>
