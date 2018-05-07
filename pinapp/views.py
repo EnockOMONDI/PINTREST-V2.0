@@ -16,7 +16,7 @@ def welcome(request):
 
 def welcome(request):
     profiles = Image.get_images()
-    return render(request, 'welcome.html', {"pinapp": pinapp})
+    return render(request, 'welcome.html', {"profiles": profiles})
 
 
 def search_results(request):
