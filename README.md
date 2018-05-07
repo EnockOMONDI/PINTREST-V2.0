@@ -1,4 +1,4 @@
-![PINTREST](screenshot.png)
+![PINTREST](screenshot2.png)
 
 # PINTREST V2 BY ENOCK OMONDI
 
