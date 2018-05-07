@@ -16,6 +16,7 @@
   {% block styles %}
     {% bootstrap_css %}
     <link rel="stylesheet" href="{% static 'css/basepinapp.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
   {% endblock %}
   <link rel="shortcut icon" type="image/png" href="{% static 'images/PIN.png' %}"/>
 </head>
@@ -25,6 +26,11 @@
 
     {% block scripts %}
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
      {% bootstrap_javascript %}
     {% endblock %}
 </body>
