@@ -25,6 +25,7 @@ Activate virtual (source virtual/bin/activate)
 * [psql](https://www.postgresql.org/docs/) - Database
 * [bootstrap4](https://getbootstrap.com/) - front end styling
 * [python](https://www.python.org/) - the language
+* [materialize ] - styling 
 
 ## Deployment
  -Heroku
