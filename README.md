@@ -1,4 +1,4 @@
-![PINTREST](screenshot2.png)
+![PINTREST](apppreview.png)
 
 # PINTREST V2 BY ENOCK OMONDI
 
@@ -25,7 +25,7 @@ Activate virtual (source virtual/bin/activate)
 * [psql](https://www.postgresql.org/docs/) - Database
 * [bootstrap4](https://getbootstrap.com/) - front end styling
 * [python](https://www.python.org/) - the language
-* [materialize ] - styling 
+* [materialize ] - styling
 
 ## Deployment
  -Heroku
