@@ -1,8 +1,7 @@
 {% load bootstrap4 %}
 {% load static %}
 <nav class="navbar navbar-dark" style="background-color:#000000;">
-  <a class="navbar-brand" href="{% url 'welcome' %}">    PINTREST
-    <!-- <img src="{%static 'images/Untitled.png'%}" /></a> --></a>
+  <a class="navbar-brand" href="{% url 'welcome' %}">PINTREST</a>
   <form class="form-inline" role="search" action="{% url 'search_results' %}">
     <div class="input-group">
       <input class="form-control mr-sm-2" type="text" placeholder="Search category" name="category" aria-label="Search">
