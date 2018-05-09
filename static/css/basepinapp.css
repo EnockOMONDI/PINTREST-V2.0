@@ -1,3 +1,6 @@
 h1{
   color: inherit;
 }
+.card-content{
+  padding-left: 50px;
+}

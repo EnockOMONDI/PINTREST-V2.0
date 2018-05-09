@@ -7,16 +7,16 @@
 
         </div>
         <div class="card-content">
-          <p>                              welcome to pintrest simply search images a by category you want ie foods, tatoos, cars, etc</p>
+          <p>  welcome to pintrest simply search images a by category you want ie foods, tatoos, cars, shoes, fashion, celebrity pics etc</p>
         </div>
       </div>
     </div>
-  </div>
+
 
   <div class="row">
     {# displaying Profiles Images #}
 {% for image_item in profiles%}
-    <div class="col-xs-4 col-sm-4 col-md-4 mt-5">
+    <div class="col-xs-4 col-sm-6 col-md-3 mt-6">
       <div class="card" style="width: 15rem;">
       <img class="card-img-top" src="{{image_item.image.url}}" class="img-responsive" alt="{{image_item.image_name}}">
         <div class="card-body">
@@ -33,5 +33,6 @@
   </div>
 
 </div>
+  </div>
 
 {% endblock %}
