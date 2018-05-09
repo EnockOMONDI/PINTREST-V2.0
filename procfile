@@ -1,1 +1,1 @@
-web:gunicorn pintrest.wsgi
+web: gunicorn pintrest.wsgi
